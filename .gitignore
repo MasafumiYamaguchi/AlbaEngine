@@ -39,3 +39,27 @@
 
 # debug information files
 *.dwo
+
+# --- macOS & Xcode ---
+.DS_Store
+.AppleDouble
+.LSOverride
+*.xcodeproj/
+*.xcworkspace/
+*.xcuserdata/
+
+# --- Build Directories ---
+build/
+out/
+bin/
+
+# --- Rendering Outputs ---
+# すべての画像をGitに入れると重くなるので、
+# "renders/" フォルダは無視し、選別したものだけ "gallery/" 等に入れる運用がおすすめ
+renders/
+*.ppm
+*.png
+!gallery/*.png  # galleryフォルダ内のpngだけは許可する設定
+
+# --- VS Code ---
+.vscode/
